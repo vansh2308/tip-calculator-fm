@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+}
+body{
+  background-color: #c5e4e7;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  row-gap: 10vh;
+  overflow: scroll;
+}
+.container{
+  background-color: #fff;
+  width: 55vw;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-container, .right-container{
+  width: 48%;
+  font-size: 13px;
+}
+.left-container{
+  color: #929d9f;
+}
+.input-cont{
+  width: 100%;
+  background-color: #f3f8fb;  
+  border-radius: 5px;
+  height: 40px;
+  padding: 00;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0 10% 0;
+}
+input[type = "text"]{
+  width: 80%;
+  cursor: pointer;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: right;
+  color: #00474b;
+  font-weight: bold;
+  font-size: large;
+
+}
+button{
+  border: none;
+  outline: none;
+  padding: 9% 0%;
+}
+.tip-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 13px;
+  column-gap: 13px;
+  margin: 3% 0 15% 0;
+}
+.tip-container input{
+  width: 100%;
+  text-align: center;
+  background-color: #f3f8fb;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.tip-container button{
+  background-color: #00474b;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
+}
+.right-container{
+  background-color: #00474b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4% 0;
+}
+.output{
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  color: white;
+  margin: 0 0 10% 0;
+}
+.reset-btn{
+  background-color: #2bc1ae;
+  width: 85%;
+  font-size: 18px;
+  color: #00474b;
+  padding: 3% 0;
+  border-radius: 5px;
+  position: relative;
+  justify-self: baseline;
+  margin: 43% 0 0 0 ;
+}
+button:hover{
+  background-color: #9fe8df;
+  color: #00474b;
+}
+.tip-container input:focus{
+  border: 2px solid #2bc1ae;
+}
+.input-cont:focus-within {
+  border: 2px solid #2bc1ae;
+}
+
+@media screen and (max-width: 860px) {
+  .container{
+    max-width: max-content;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-container, .right-container{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .container{
+    width: 90%;
+    padding: 20px;
+  }
+  .left-container, .right-container{
+    width: 100%;
+  }
+}

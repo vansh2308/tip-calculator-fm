@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <main>
+    <img src="./images/logo.svg" alt="logo">
+    <div class="container">
+      <div class="left-container">
+        Bill <br>
+        <div class="input-cont">
+          <img src="./images/icon-dollar.svg" alt="dollar">
+          <input type="text" value="">
+        </div>
+
+        Select Tip <br>
+        <div class="tip-container">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input type="text" placeholder="Custom">
+
+        </div>
+
+        Number of People <br>
+        <div class="input-cont">
+          <img src="./images/icon-person.svg" alt="dollar">
+          <input type="text" value="">
+        </div>
+
+        
+
+      </div>
+      <div class="right-container">
+
+        <div class="output">
+          <div style=" display: flex; flex-direction: column;justify-content: center;">
+            Tip Amount <br>
+            <span style="color: #61969a;">/person</span>
+          </div>
+          <div style="color: #2bc1ae; font-size: 35px;">$0.00</div>
+        </div>
+        
+        <div class="output">
+          <div style=" display: flex; flex-direction: column;justify-content: center;">
+            Total <br>
+            <span style="color: #61969a;">/person</span>
+          </div>
+          <div style="color: #2bc1ae; font-size: 35px;">$0.00</div>
+        </div>
+        
+        <button class="reset-btn"> RESET </button>
+        
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
